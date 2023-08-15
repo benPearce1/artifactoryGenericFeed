@@ -1,5 +1,4 @@
-We have a company hosted artifactory generic repo we could use for testing:
-`https://packages.octopushq.com/ui/repos/tree/General/zip-local`
+We have a company hosted artifactory generic repo we could use for testing:  https://packages.octopushq.com/ui/repos/tree/General/zip-local
 
 
 Installation - https://jfrog.com/help/r/jfrog-installation-setup-documentation/install-artifactory-single-node-with-docker
