@@ -1,3 +1,7 @@
+We have a company hosted artifactory generic repo we could use for testing:
+`https://packages.octopushq.com/ui/repos/tree/General/zip-local`
+
+
 Installation - https://jfrog.com/help/r/jfrog-installation-setup-documentation/install-artifactory-single-node-with-docker
 
 set `JFROG_HOME` environment variable to local path
@@ -53,6 +57,8 @@ To search with the jfrog cli:
 To download a zip file:
 `jf rt dl "example-repo-local/TestWebApp.1.0.2-beta002.zip"`
 
+
+Artifactory supports folders, which form part of the repository path. I don't think we should support nested folders
 
 Useful API calls:
 `curl -X GET -uadmin:cmVmdGtuOjAxOjE3MjM2MTU2MTA6MDBnYnVLaXVkTncwV2ZBU3VvbnVzcVAwc2Ni http://localhost:8082/artifactory/api/storage/example-repo-local/`
