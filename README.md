@@ -54,5 +54,85 @@ To download a zip file:
 `jf rt dl "example-repo-local/TestWebApp.1.0.2-beta002.zip"`
 
 
+Useful API calls:
+`curl -X GET -uadmin:cmVmdGtuOjAxOjE3MjM2MTU2MTA6MDBnYnVLaXVkTncwV2ZBU3VvbnVzcVAwc2Ni http://localhost:8082/artifactory/api/storage/example-repo-local/`
 
+```
+{
+  "repo" : "example-repo-local",
+  "path" : "/",
+  "created" : "2023-08-15T06:05:41.490Z",
+  "lastModified" : "2023-08-15T06:05:41.490Z",
+  "lastUpdated" : "2023-08-15T06:05:41.490Z",
+  "children" : [ {
+    "uri" : "/TestWebApp.1.0.0.zip",
+    "folder" : false
+  }, {
+    "uri" : "/TestWebApp.1.0.1.zip",
+    "folder" : false
+  }, {
+    "uri" : "/TestWebApp.1.0.2-beta.zip",
+    "folder" : false
+  }, {
+    "uri" : "/TestWebApp.1.0.2-beta002.zip",
+    "folder" : false
+  }, {
+    "uri" : "/TestWebApp.1.0.2-beta003.zip",
+    "folder" : false
+  }, {
+    "uri" : "/TestWebApp.1.0.2.zip",
+    "folder" : false
+  }, {
+    "uri" : "/TestWebApp.zip",
+    "folder" : false
+  }, {
+    "uri" : "/TestWebApp2.1.0.0.zip",
+    "folder" : false
+  }, {
+    "uri" : "/TestWebApp2.1.0.1.zip",
+    "folder" : false
+  }, {
+    "uri" : "/TestWebApp2.1.0.2-beta.zip",
+    "folder" : false
+  }, {
+    "uri" : "/TestWebApp2.1.0.2-beta002.zip",
+    "folder" : false
+  }, {
+    "uri" : "/TestWebApp2.1.0.2-beta003.zip",
+    "folder" : false
+  }, {
+    "uri" : "/TestWebApp2.1.0.2.zip",
+    "folder" : false
+  } ],
+  "uri" : "http://localhost:8082/artifactory/api/storage/example-repo-local"
+}%
+```
 
+`curl -X GET -uadmin:cmVmdGtuOjAxOjE3MjM2MTU2MTA6MDBnYnVLaXVkTncwV2ZBU3VvbnVzcVAwc2Ni http://localhost:8082/artifactory/api/storage/example-repo-local/TestWebApp.1.0.0.zi
+p`
+
+```
+{
+  "repo" : "example-repo-local",
+  "path" : "/TestWebApp.1.0.0.zip",
+  "created" : "2023-08-15T06:09:32.200Z",
+  "createdBy" : "admin",
+  "lastModified" : "2023-08-15T06:09:32.200Z",
+  "modifiedBy" : "admin",
+  "lastUpdated" : "2023-08-15T06:09:32.201Z",
+  "downloadUri" : "http://localhost:8082/artifactory/example-repo-local/TestWebApp.1.0.0.zip",
+  "mimeType" : "application/zip",
+  "size" : "679677",
+  "checksums" : {
+    "sha1" : "d6230604262fa191c6ace5d047562084ae863fbf",
+    "md5" : "87cf854c700475483251f622a8b615c9",
+    "sha256" : "945319dd0c3585cddcbd455d147d588072fc12513d822228d354af79fb214d8a"
+  },
+  "originalChecksums" : {
+    "sha1" : "d6230604262fa191c6ace5d047562084ae863fbf",
+    "md5" : "87cf854c700475483251f622a8b615c9",
+    "sha256" : "945319dd0c3585cddcbd455d147d588072fc12513d822228d354af79fb214d8a"
+  },
+  "uri" : "http://localhost:8082/artifactory/api/storage/example-repo-local/TestWebApp.1.0.0.zip"
+}%
+```
