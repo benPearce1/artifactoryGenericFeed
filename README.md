@@ -12,6 +12,7 @@ chown -R 1030:1030 $JFROG_HOME/artifactory/var
 
 On linux:
 `chmod -R 1030:1030 $JFROG_HOME/artifactory/var`
+
 On mac:
 `chmod -R 777 $JFROG_HOME/artifactory/var`
 
