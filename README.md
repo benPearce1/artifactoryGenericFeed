@@ -141,3 +141,9 @@ p`
   "uri" : "http://localhost:8082/artifactory/api/storage/example-repo-local/TestWebApp.1.0.0.zip"
 }%
 ```
+
+
+Sample PRs from OCI repository work:
+https://github.com/OctopusDeploy/OctopusDeploy/pull/17361
+https://github.com/OctopusDeploy/Calamari/pull/1001
+https://github.com/OctopusDeploy/docs/pull/1968
